@@ -1,33 +1,80 @@
 /* hero */
 .hero {
-    background-color: var(--dark-page-color);
+  background-color: var(--dark-page-color);
 }
 
 .hero .title {
-    color: var(--main-light-text-color);
+  color: var(--main-light-text-color);
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36; /* 136.364% */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-/* .hero .button {
-    background-color: var(--accent-color);
-    color: var(--main-light-text-color);
-} */
+.hero .button {
+  background-color: var(--accent-color);
+  color: var(--main-light-text-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88; /* 187.5% */
+  letter-spacing: 0.06em;
+}
 
 /* qualities*/
 .qualities .title {
-    color: var(--secondary-dark-text-color);
+  color: var(--secondary-dark-text-color);
+  text-align: start;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.qualities-list .text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7; /* 171.429% */
+  letter-spacing: 0.03em;
 }
 
 /* services */
-.services .title {
-    color: var(--secondary-dark-text-color);
-}
+/* .services .title {
+  color: var(--secondary-dark-text-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.03em;
+} */
 
 /* team */
 .team {
-    background-color: var(--secondary-page-color);
+  background-color: var(--secondary-page-color);
 }
-.team .title {
-    color: var(--secondary-dark-text-color);
+/* .team .title {
+  color: var(--secondary-dark-text-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.03em;
+} */
+.team-list .title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
 
-
+.team-list .position {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.03em;
+}
