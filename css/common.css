@@ -30,7 +30,18 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
+
 /* Header */
+.page-header {
+  background-color: #ccc;
+}
+
 /* Logo */
 .logo {
   color: var(--logo-color);
@@ -73,12 +84,15 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .button {
   background-color: var(--secondary-page-color);
   color: var(--secondary-dark-text-color);
 
+  border-radius: 0.25rem;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6; /* 162.5% */
