@@ -13,112 +13,136 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="page-header">
-      <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-      <nav class="nav">
-        <ul class="nav-list list">
+
+    <!-- Portfolio header -->
+    <header class="header">
+      <div class="container">
+        <nav>
+          <a class="page-logo" href="./index.html"
+            ><span class="accent-logo">Web</span>Studio</a
+          >
+
+          <ul class="nav-list list">
+            <li>
+              <a href="./index.html" class="link current">Studio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#" class="link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts-list list">
           <li>
-            <a href="./index.html" class="link">Studio</a>
+            <a class="link" href="#">info@devstudio.com</a>
           </li>
           <li>
-            <a href="./portfolio.html" class="link current">Portfolio</a>
-          </li>
-          <li>
-            <a href="#" class="link">Contacts</a>
+            <a class="link" href="#">+1 212-772-4150</a>
           </li>
         </ul>
-      </nav>
-      <ul class="contacts-list list">
-        <li>
-          <a class="link" href="#">info@devstudio.com</a>
-        </li>
-        <li>
-          <a class="link" href="#">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
+    <!-- Section portfolio -->
     <section class="portfolio">
-      <h1>Portfolio Showcase</h1>
+      <div class="container">
 
-      <ul class="filter-list list">
-        <li>
-          <button class="button secondary" type="button">All</button>
-        </li>
-        <li>
-          <button class="button secondary" type="button">Websites</button>
-        </li>
-        <li>
-          <button class="button secondary" type="button">Applications</button>
-        </li>
-        <li>
-          <button class="button secondary" type="button">Design</button>
-        </li>
-        <li>
-          <button class="button secondary" type="button">Marketing</button>
-        </li>
-      </ul>
-
-      <ul class="portfolio-list list">
-        <li>
-          <img src="images/portfolio/techcrack.jpg" width="370" alt="" />
-          <h3 class="title">TechCrack</h3>
-          <p class="text">Website</p>
-        </li>
-        <li>
-          <img src="images/portfolio/showdown.jpg" width="370" alt="" />
-          <h3 class="title">New Orleans vs Golden Star Poster</h3>
-          <p class="text">Design</p>
-        </li>
-        <li>
-          <img src="images/portfolio/oceanic.jpg" width="370" alt="" />
-          <h3 class="title">Seafood Restaurant</h3>
-          <p class="text">Application</p>
-        </li>
-        <li>
-          <img src="images/portfolio/primeproject.jpg" width="370" alt="" />
-          <h3 class="title">Prime Project</h3>
-          <p class="text">Marketing</p>
-        </li>
-        <li>
-          <img src="images/portfolio/boxes.jpg" width="370" alt="" />
-          <h3 class="title">Boxes Project</h3>
-          <p class="text">Application</p>
-        </li>
-        <li>
-          <img src="images/portfolio/inspireborders.jpg" width="370" alt="" />
-          <h3 class="title">Inspiration has no Borders</h3>
-          <p class="text">Website</p>
-        </li>
-        <li>
-          <img src="images/portfolio/edition.jpg" width="370" alt="" />
-          <h3 class="title">Limited Edition Publication</h3>
-          <p class="text">Design</p>
-        </li>
-        <li>
-          <img src="images/portfolio/lab.jpg" width="370" alt="" />
-          <h3 class="title">LAB Project</h3>
-          <p class="text">Marketing</p>
-        </li>
-        <li>
-          <img src="images/portfolio/growbiz.jpg" width="370" alt="" />
-          <h3 class="title">Growing Business</h3>
-          <p class="text">Application</p>
-        </li>
-      </ul>
+        <h1>Portfolio Showcase</h1>
+  
+        <!-- Filters -->
+        <ul class="filter-list list">
+          <li>
+            <button class="button secondary" type="button">All</button>
+          </li>
+          <li>
+            <button class="button secondary" type="button">Websites</button>
+          </li>
+          <li>
+            <button class="button secondary" type="button">Applications</button>
+          </li>
+          <li>
+            <button class="button secondary" type="button">Design</button>
+          </li>
+          <li>
+            <button class="button secondary" type="button">Marketing</button>
+          </li>
+        </ul>
+  
+        <!-- Portfolio -->
+        <ul class="portfolio-list list">
+          <li>
+            <img src="images/portfolio/techcrack.jpg" width="370" alt="" />
+            <h3 class="title">TechCrack</h3>
+            <p class="text">Website</p>
+          </li>
+          <li>
+            <img src="images/portfolio/showdown.jpg" width="370" alt="" />
+            <h3 class="title">New Orleans vs Golden Star Poster</h3>
+            <p class="text">Design</p>
+          </li>
+          <li>
+            <img src="images/portfolio/oceanic.jpg" width="370" alt="" />
+            <h3 class="title">Seafood Restaurant</h3>
+            <p class="text">Application</p>
+          </li>
+          <li>
+            <img src="images/portfolio/primeproject.jpg" width="370" alt="" />
+            <h3 class="title">Prime Project</h3>
+            <p class="text">Marketing</p>
+          </li>
+          <li>
+            <img src="images/portfolio/boxes.jpg" width="370" alt="" />
+            <h3 class="title">Boxes Project</h3>
+            <p class="text">Application</p>
+          </li>
+          <li>
+            <img src="images/portfolio/inspireborders.jpg" width="370" alt="" />
+            <h3 class="title">Inspiration has no Borders</h3>
+            <p class="text">Website</p>
+          </li>
+          <li>
+            <img src="images/portfolio/edition.jpg" width="370" alt="" />
+            <h3 class="title">Limited Edition Publication</h3>
+            <p class="text">Design</p>
+          </li>
+          <li>
+            <img src="images/portfolio/lab.jpg" width="370" alt="" />
+            <h3 class="title">LAB Project</h3>
+            <p class="text">Marketing</p>
+          </li>
+          <li>
+            <img src="images/portfolio/growbiz.jpg" width="370" alt="" />
+            <h3 class="title">Growing Business</h3>
+            <p class="text">Application</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
+    <!-- Portfolio footer -->
     <footer class="footer">
-      <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-      <address class="contact-info">
-        <a class="address link" href="#">Kyiv, Lesi Ukrainky Avenue, 26</a>
-        <a class="mail link" href="#">info@devstudio.com</a>
-        <a class="tel link" href="#">+38 096 111 11 11</a>
-      </address>
+      <div class="container">
+        <a class="page-logo" href="./index.html"
+          ><span class="accent-logo">Web</span>Studio</a
+        >
+        <address class="contact-info">
+          <a class="address link" href="#">695 Park Ave, NY 10065, USA</a>
+          <ul class="contacts-list list">
+            <li>
+              <a class="link" href="#">info@devstudio.com</a>
+            </li>
+            <li>
+              <a class="link" href="#">+1 212-772-4150</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
