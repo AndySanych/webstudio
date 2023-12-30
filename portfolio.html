@@ -19,29 +19,29 @@
     <!-- Portfolio header -->
     <header class="header">
       <div class="container">
-        <nav>
-          <a class="page-logo" href="./index.html"
-            ><span class="accent-logo">Web</span>Studio</a
-          >
+        <nav class="nav">
+          <a class="header-logo logo" href="./index.html">
+            <span class="accent-logo">Web</span>Studio
+          </a>
 
-          <ul class="nav-list list">
-            <li>
+          <ul class="site-nav list">
+            <li class="item">
               <a href="./index.html" class="link">Studio</a>
             </li>
-            <li>
+            <li class="item">
               <a href="./portfolio.html" class="link current">Portfolio</a>
             </li>
-            <li>
+            <li class="item">
               <a href="#" class="link">Contacts</a>
             </li>
           </ul>
         </nav>
 
         <ul class="contacts-list list">
-          <li>
+          <li class="item">
             <a class="link" href="#">info@devstudio.com</a>
           </li>
-          <li>
+          <li class="item">
             <a class="link" href="#">+1 212-772-4150</a>
           </li>
         </ul>
@@ -54,82 +54,138 @@
         <h1 class="visually-hidden">Portfolio Showcase</h1>
 
         <!-- Filters -->
-        <ul class="filter-list list">
+        <ul class="filters list">
           <li class="item">
-            <button class="button secondary" type="button">All</button>
+            <button class="filter-btn button" type="button">All</button>
           </li>
 
           <li class="item">
-            <button class="button secondary" type="button">Websites</button>
+            <button class="filter-btn button" type="button">Web-sites</button>
           </li>
 
           <li class="item">
-            <button class="button secondary" type="button">Applications</button>
+            <button class="filter-btn button" type="button">
+              Applications
+            </button>
           </li>
 
           <li class="item">
-            <button class="button secondary" type="button">Design</button>
+            <button class="filter-btn button" type="button">Design</button>
           </li>
 
           <li class="item">
-            <button class="button secondary" type="button">Marketing</button>
+            <button class="filter-btn button" type="button">Marketing</button>
           </li>
         </ul>
 
         <!-- Portfolio -->
         <ul class="portfolio-set list">
           <li class="item">
-            <img src="images/portfolio/techcrack.jpg" width="370" alt="" />
-            <h3 class="title">TechCrack</h3>
-            <p class="text">Website</p>
+            <article class="card">
+              <div class="card-thumb">
+                <img src="images/portfolio/technoduck.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-heading">Technoduck</h3>
+                <p class="card-text">Web-site</p>
+              </div>
+            </article>
           </li>
 
           <li class="item">
-            <img src="images/portfolio/showdown.jpg" width="370" alt="" />
-            <h3 class="title">New Orleans vs Golden Star Poster</h3>
-            <p class="text">Design</p>
+            <article class="card">
+              <div class="card-thumb">
+                <img src="images/portfolio/poster.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-heading">Poster New Orlean vs Golden Star</h3>
+                <p class="card-text">Design</p>
+              </div>
+            </article>
           </li>
 
           <li class="item">
-            <img src="images/portfolio/oceanic.jpg" width="370" alt="" />
-            <h3 class="title">Seafood Restaurant</h3>
-            <p class="text">Application</p>
+            <article class="card">
+              <div class="card-thumb">
+                <img src="images/portfolio/seafood.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-heading">Seafood Restaurant</h3>
+                <p class="card-text">Apps</p>
+              </div>
+            </article>
           </li>
 
           <li class="item">
-            <img src="images/portfolio/primeproject.jpg" width="370" alt="" />
-            <h3 class="title">Prime Project</h3>
-            <p class="text">Marketing</p>
+            <article class="card">
+              <div class="card-thumb">
+                <img src="images/portfolio/prime.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-heading">Project Prime</h3>
+                <p class="card-text">Marketing</p>
+              </div>
+            </article>
           </li>
 
           <li class="item">
-            <img src="images/portfolio/boxes.jpg" width="370" alt="" />
-            <h3 class="title">Boxes Project</h3>
-            <p class="text">Application</p>
+            <article class="card">
+              <div class="card-thumb">
+                <img src="images/portfolio/boxes.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-heading">Project Boxes</h3>
+                <p class="card-text">Apps</p>
+              </div>
+            </article>
           </li>
 
           <li class="item">
-            <img src="images/portfolio/inspireborders.jpg" width="370" alt="" />
-            <h3 class="title">Inspiration has no Borders</h3>
-            <p class="text">Website</p>
+            <article class="card">
+              <div class="card-thumb">
+                <img src="images/portfolio/inspiration.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-heading">Inspiration has no Borders</h3>
+                <p class="card-text">Web-site</p>
+              </div>
+            </article>
           </li>
 
           <li class="item">
-            <img src="images/portfolio/edition.jpg" width="370" alt="" />
-            <h3 class="title">Limited Edition Publication</h3>
-            <p class="text">Design</p>
+            <article class="card">
+              <div class="card-thumb">
+                <img src="images/portfolio/limited.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-heading">Limited Edition</h3>
+                <p class="card-text">Design</p>
+              </div>
+            </article>
           </li>
 
           <li class="item">
-            <img src="images/portfolio/lab.jpg" width="370" alt="" />
-            <h3 class="title">LAB Project</h3>
-            <p class="text">Marketing</p>
+            <article class="card">
+              <div class="card-thumb">
+                <img src="images/portfolio/lab.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-heading">Project LAB</h3>
+                <p class="card-text">Marketing</p>
+              </div>
+            </article>
           </li>
 
           <li class="item">
-            <img src="images/portfolio/growbiz.jpg" width="370" alt="" />
-            <h3 class="title">Growing Business</h3>
-            <p class="text">Application</p>
+            <article class="card">
+              <div class="card-thumb">
+                <img src="images/portfolio/growing.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-heading">Growing Business</h3>
+                <p class="card-text">Apps</p>
+              </div>
+            </article>
           </li>
         </ul>
       </div>
@@ -138,17 +194,19 @@
     <!-- Portfolio footer -->
     <footer class="footer">
       <div class="container">
-        <a class="page-logo" href="./index.html"
-          ><span class="accent-logo">Web</span>Studio</a
-        >
-        <address class="contact-info">
-          <a class="address link" href="#">695 Park Ave, NY 10065, USA</a>
-          <ul class="contacts-list list">
-            <li>
-              <a class="link" href="#">info@devstudio.com</a>
+        <a class="footer-logo logo" href="./index.html">
+          <span class="accent-logo">Web</span>
+          Studio
+        </a>
+        <address class="address">
+          <a class="address-link link" href="#">695 Park Ave, NY 10065, USA</a>
+          <ul class="contacts list">
+            <li class="item">
+              <a class="contact-link link" href="#">info@devstudio.com</a>
             </li>
-            <li>
-              <a class="link" href="#">+1 212-772-4150</a>
+
+            <li class="item">
+              <a class="contact-link link" href="#">+1 212-772-4150</a>
             </li>
           </ul>
         </address>
