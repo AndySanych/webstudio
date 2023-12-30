@@ -28,6 +28,12 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -48,20 +54,18 @@ p {
 }
 
 /*PAGE-LOGO */
-.page-logo {
-  color: var(--logo-color);
+.logo {
+  /* color: var(--logo-color); */
   font-family: Raleway, sans-serif;
   text-decoration: none;
 
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.03em;
-  line-height: normal;
-
-  /* background-color: blue; */
+  /* line-height: normal; */
 }
 
-.page-logo .accent-logo {
+.logo .accent-logo {
   color: var(--accent-color);
 }
 
@@ -70,6 +74,7 @@ p {
   color: var(--secondary-dark-text-color);
   font-family: inherit;
   text-decoration: none;
+  cursor: pointer;
 
   font-size: 14px;
   font-weight: 500;
@@ -98,7 +103,10 @@ p {
 .button {
   text-align: center;
   font-size: 16px;
+  border: none;
   border-radius: 4px;
+
+  cursor: pointer;
 }
 
 /* SECTION */
@@ -111,8 +119,6 @@ p {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
-
-  /* background-color: aqua; */
 }
 
 /* CONTAINER */
@@ -120,11 +126,10 @@ p {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* HEADER */
@@ -140,6 +145,10 @@ p {
 .header .nav {
   display: flex;
   align-items: center;
+}
+
+.header-logo {
+  color: var(--logo-color);
 }
 
 /* site-nav */
@@ -235,19 +244,22 @@ p {
   line-height: 1.7; /* 171.429% */
   letter-spacing: 0.42px;
 
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 /* OUR TEAM */
-/* .team-list > .item {
-    text-align: center;
-} */
-.team-list .title {
-  margin-bottom: 10px;
+.team-list {
+  display: flex;
 }
 
-.team-list .title {
+.team-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.card-content .title {
   color: var(--secondary-dark-text-color);
+  margin-bottom: 10px;
+  text-align: center;
 
   font-size: 16px;
   font-weight: 500;
@@ -255,7 +267,9 @@ p {
   letter-spacing: 0.48px;
 }
 
-.team-list .description {
+.card-content .description {
+  text-align: center;
+
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
@@ -266,23 +280,37 @@ p {
 .footer {
   background-color: var(--dark-page-color);
 }
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
-.footer .page-logo {
+.footer-logo {
+  display: block;
   color: var(--main-light-text-color);
   margin-bottom: 28px;
 }
 
-.contact-info .link {
-  color: var(--secondary-light-text-color);
+/* Address */
+.address-link {
+  display: block;
+  color: var(--main-light-text-color);
+margin-bottom: 12px;
+
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.7; /* 171.429% */
-  letter-spacing: 0.03em;
+  letter-spacing: 0.42px;
 }
 
-.contact-info .address {
-  color: var(--main-light-text-color);
+.contact-link {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.60);
+}
+
+.contacts > .item:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 /* Qualities */
@@ -299,9 +327,7 @@ p {
 
 .qualities-list > .item {
   flex-basis: calc((100% - 3 * 30px) / 4);
-  outline: 2px solid red;
 }
-
 
 /* Services */
 
@@ -317,20 +343,40 @@ p {
 }
 
 /* PORTFOLIO */
-.filter-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.portfolio .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
+/* filters */
+.filters {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.filters > .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-btn {
+  padding: 6px 22px;
+  font-weight: 500;
+  line-height: 1.63; /* 162.5% */
+  letter-spacing: 0.48px;
+
+  background-color: var(--secondary-page-color);
+}
 
 /* Portfolio */
 .portfolio-set {
   display: flex;
   flex-wrap: wrap;
 
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * var(--portfolio-set-gap));
+  margin-left: calc(-1 * var(--portfolio-set-gap));
   /* background-color: rgb(138, 220, 155); */
 }
 
@@ -338,22 +384,37 @@ p {
   flex-basis: calc(100% / 3 - var(--portfolio-set-gap));
   margin-top: var(--portfolio-set-gap);
   margin-left: var(--portfolio-set-gap);
-  outline: 2px solid  rgb(255, 148, 127);
-
+  /* outline: 2px solid  rgb(255, 148, 127); */
 }
 
-.portfolio-set .title {
+/* CARD */
+/* .item * {
+  outline: 1px solid tomato;
+} */
+
+/* .card-thumb {
+  margin-bottom: 20px;
+} */
+
+/* Card content */
+.card-content {
+  padding: 20px 24px;
+}
+
+.card-heading {
   color: var(--secondary-dark-text-color);
 
   font-size: 18px;
   font-weight: 700;
   line-height: 2; /* 200% */
-  letter-spacing: 0.06em;
+  letter-spacing: 1.08px;
+
+  margin-bottom: 4px;
 }
-.portfolio-set .text {
+.card-text {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.87; /* 187.5% */
-  letter-spacing: 0.03em;
+  line-height: 1.88; /* 187.5% */
+  letter-spacing: 0.48px;
 }
