@@ -4,23 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
   </head>
   <body>
     <!--Header-->
-    <header>
-      <a href="./index.html">web<span>studio</span></a>
+    <header class="header">
+      <a class="logo" href="./index.html"
+        ><span class="logo-highlight">web</span>studio</a
+      >
 
-      <nav>
-        <ul>
-          <li><a href="./index.html">Studio</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="#">Contacts</a></li>
+      <nav class="header-nav">
+        <ul class="nav-list list">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Studio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link current" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
         </ul>
       </nav>
 
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+1 212-772-4150">+1 212-772-4150</a></li>
+      <ul class="contacts-list list">
+        <li class="contacts-item">
+          <a class="contacts-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="contacts-item">
+          <a class="contacts-link" href="tel:+1 212-772-4150"
+            >+1 212-772-4150</a
+          >
+        </li>
       </ul>
     </header>
 
@@ -112,12 +128,25 @@
     </main>
 
     <!--Footer-->
-    <footer>
-      <a href="/">web<span>studio</span></a>
-      <a href="#">695 Park Ave, NY 10065, USA</a>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+1 212-772-4150">+1 212-772-4150</a></li>
+    <footer class="footer">
+      <a class="footer-logo" href="./index.html"
+        ><span class="logo-highlight">web</span>studio</a
+      >
+      <address class="address">
+        <a class="address-link" href="#">695 Park Ave, NY 10065, USA</a>
+      </address>
+
+      <ul class="footer-contacts list">
+        <li class="contacts-item">
+          <a class="contacts-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="contacts-item">
+          <a class="contacts-link" href="tel:+1 212-772-4150"
+            >+1 212-772-4150</a
+          >
+        </li>
       </ul>
     </footer>
   </body>
