@@ -1,0 +1,8 @@
+/* Hero */
+.hero {
+    background-color: var(--footer-bg-color);
+}
+
+.hero-title {
+    color: var(--white-text-color);
+}
