@@ -33,6 +33,20 @@ body {
   color: var(--main-text-color);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: rgb(159, 153, 152);
+}
+
+.section.no-padding {
+  padding-bottom: 0;
+}
+
+.hidden-heading {
+  margin: 0;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -44,6 +58,10 @@ body {
 }
 
 .title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-text-color);
 }
 
