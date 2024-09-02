@@ -24,6 +24,8 @@
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .principles-description {
@@ -31,4 +33,34 @@
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
+  margin: 0;
 }
+
+/* What we do */
+.services-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+/* Our Team */
+.team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.team-img {
+    margin-bottom: 30px;
+}
+
+.card-title {
+    font-weight: 500;
+font-size: 16px;
+letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    margin: 0;
+}
+
