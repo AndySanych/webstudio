@@ -1,4 +1,3 @@
-
 :root {
   /* Colors page */
   --primary-bg-color: #ffffff;
@@ -36,44 +35,92 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .title {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
 }
 
+/* Button */
 .button {
-    background-color: var(--accent-color);
-    color: var(--white-link-color);
+  padding: 10px 20px;
+  border-radius: 4px;
+  /* min-width: 200px; */
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  background-color: var(--accent-color);
+  color: var(--white-link-color);
 }
 
 .button.primary {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .button.secondary {
-    background-color: var(--secondary-bg-color);
-    color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+  color: var(--title-text-color);
 }
 
-.button.secondary:hover, .button.secondary:focus {
-    background-color: var(--accent-color);
-    color: var(--white-link-color);
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: var(--accent-color);
+  color: var(--white-link-color);
 }
 
+.cta-button {
+  display: inline-block;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1170px;
+  outline: 2px solid tomato;
+}
 
 /* Header */
+.header {
+  background-color: aqua;
+}
 /* Logo */
 .logo {
+  font-family: var(--second-family);
   color: var(--primary-logo-color);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+}
+
+.logo-highlight,
+.logo-normal {
+  display: inline-block;
+  text-transform: capitalize;
 }
 
 .logo-highlight {
   color: var(--secondary-logo-color);
 }
 
+.logo-normal {
+  font-weight: normal;
+}
+
 /* Navigation list */
 .nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
   color: var(--primary-link-color);
 }
 
@@ -83,18 +130,21 @@ body {
 }
 
 .nav-link.current {
-    color: var(--accent-link-color);
+  color: var(--accent-link-color);
 }
 
 /* Contacts list */
 .contacts-link {
-    color: var(--secondary-link-color);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-link-color);
 }
 
-.contacts-link:hover, .contacts-link:focus {
-    color: var(--accent-link-color);
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-link-color);
 }
-
 
 /* Footer */
 .footer {
